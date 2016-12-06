@@ -1,24 +1,42 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 <title>Portfolio</title>
-<link rel="stylesheet" type="text/css" href="style.css">
 <style>
+@import url('index.css');
+<!-- Fonts -->
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+<style>@import url('https://fonts.googleapis.com/css?family=Merriweather');</style>
+<style>@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');</style>
+<style>@import url('https://fonts.googleapis.com/css?family=Enriqueta');</style>
 </style>
 </head>
 <body>
 
-<div id="wrapper">
+<div class="wrapper mnu" script="$(".wrapper".height($(document)).height());">
+
+<img id="mnu_toggle" src="assets/mnuBar.png" onmouseover="this.src='assets/mnuBar_Hover.png'" onmouseout="this.src='assets/mnuBar.png'"/>
 
 <div id="header">
 
-	<h1>[ Portfolio ]</h1>
+	<h1 class="dark">[ Portfolio ]</h1>
 
 </div>
 
 <div id="content">
 
 	<h1>Testing, 1, 2, 3...</h1>
+	<pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+
+In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+
+Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+
+Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+
+Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</pre>
 
 </div>
 
@@ -28,7 +46,20 @@
 	
 </div>
 
+<div class="mnu_side">
+
+	<ul>
+		<li onmouseover="include_space('1')" onmouseout="exclude_space('1')" ><a href="index.html"><span class="space" id="space1">-</span>Home</a></li>
+	</ul>
+
 </div>
+
+</div>
+
+<!-- Import -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="index.js"></script>
+<script>bind_mnu();</script>
 
 </body>
 </html>
