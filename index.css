@@ -20,14 +20,14 @@ body {
 }
 
 .mnu_side, .mnu {
-	-webkit-transition: left 0.2s ease;
-	-moz-transition: left 0.2s ease;
-	transition: left 0.2s ease;
+	-webkit-transition: left 0.2s ease-out;
+	-moz-transition: left 0.2s ease-out;
+	transition: left 0.2s ease-out;
 }
 
 .mnu_side {
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #212121;
 	position: fixed;
 	top: -20px;
 	left: -161px;
@@ -47,6 +47,8 @@ body {
 	text-decoration: none;
 	display: block;
 	padding: 10px;
+	position: relative;
+	left: -40px;
 }
 
 .mnu_side li a:hover {
@@ -74,21 +76,27 @@ body {
 	padding-left: 60px;
 }
 
+#header h1 {
+	padding: 10px 10px;
+}
+
 #content {
 	font-size: 14px;
+	width: 100%;
 }
 
 #footer {
-	font-size: 12px;
+	font-size: 14px;
 	overflow-x: hidden;
 }
 
 .para {
-	font-size: 10px;
+	font-size: 16px;
+	font-family: 'Enriqueta', sans-serif;
 }
 
 .dark {
-	background-color: #000;
+	background-color: #212121;
 	color: #fff;
 }
 
@@ -100,3 +108,94 @@ body {
 	display: unset;
 	visibility: hidden;
 }
+
+/* -- Carousel Galleries -- */
+.stepcarousel {
+	position: relative;
+	border: 10px solid #D32F2F;
+	overflow: hidden;
+	/* overflow: scroll; */
+	width: 240px;
+	height: 200px;
+}
+
+.stepcarousel .belt {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.beltPost1 {
+	/* background-color: orange;*/
+}
+.beltPost2{
+	/* background-color: white; */
+}
+.beltPost3 {
+	/* background-color: yellow; */
+}
+
+.beltPost1 .panels {
+	position: relative;
+	top: 0px;
+	display: block;
+	transition: top 0.8s ease-out;
+}
+
+.beltPost2 .panels {
+	position: relative;
+	top: -180px;
+	display: block;
+	transition: top 0.8s ease-out;
+}
+
+.beltPost3 .panels {
+	position: relative;
+	top: -360px;
+	display: block;
+	transition: top 0.8s ease-out;
+}
+
+.beltPost4 .panels {
+	position: relative;
+	top: -540px;
+	display: block;
+	transition: top 0.8s ease-out;
+}
+
+.stepcarousel .panel {
+	float: left;
+	overflow: hidden;
+	margin: 15px;
+	width: 250px;
+}
+
+.panelimg {
+	width: 180px;
+	display: block;
+}
+
+.beltbtn {
+	position: absolute;
+	left: 200px;
+	
+	background: white;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.beltbtn:hover {
+	background: gray;
+}
+
+.beltbtnup {
+	top: 20px;
+}
+.beltbtndown {
+	top: 140px;
+}
+

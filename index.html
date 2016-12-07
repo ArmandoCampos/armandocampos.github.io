@@ -26,17 +26,32 @@
 <div id="content">
 
 	<h1>Testing, 1, 2, 3...</h1>
-	<pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+	<p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cam sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+	<br>
+	Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+	<br>
+	In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+	<br>
+	Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+	<br>
+	Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+	<br>
+	Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
 
-Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-
-Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-
-Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-
-Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</pre>
+<!--- Gallery--->
+	<div id="mygallery" class="stepcarousel">
+		<div class="belt beltPost2" id="belt">
+        	<div class="panels">
+                <img class="panelimg" src="assets/mnuBar.png" />
+                <img class="panelimg" src="assets/mnuBar_Hover.png" />
+                <img class="panelimg" src="assets/mnuBar.png" />
+                <img class="panelimg" src="assets/mnuBar_Hover.png" />
+            </div>
+		</div>
+		<p class="beltbtn beltbtnup" onclick="belt_moveup(getByID('belt'), 4)" ></p>
+		<p class="beltbtn beltbtndown" onclick="belt_movedown(getByID('belt'), 4)" ></p>
+	</div>
+<!--- End of Gallery--->
 
 </div>
 
@@ -48,8 +63,9 @@ Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec o
 
 <div class="mnu_side">
 
-	<ul>
+	<ul style="list-style: none;">
 		<li onmouseover="include_space('1')" onmouseout="exclude_space('1')" ><a href="index.html"><span class="space" id="space1">-</span>Home</a></li>
+		<li onmouseover="include_space('2')" onmouseout="exclude_space('2')" ><a href="index.html"><span class="space" id="space2">-</span>Option 2</a></li>
 	</ul>
 
 </div>
