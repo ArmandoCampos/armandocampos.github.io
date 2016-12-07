@@ -112,7 +112,7 @@ body {
 /* -- Carousel Galleries -- */
 .stepcarousel {
 	position: relative;
-	border: 10px solid #D32F2F;
+	border: 10px solid #263238;
 	overflow: hidden;
 	/* overflow: scroll; */
 	width: 240px;
