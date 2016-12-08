@@ -56,15 +56,28 @@ body {
 }
 
 .wrapper {
+	top: -8px;
 	margin: 0px 5px;
 	padding: 0px 5px;
 	border-left: 6px solid #000;
 	/*background-color: #fff;*/
 }
 
-#mnu_toggle {
+#fixedtop {
 	position: fixed;
-	top: 34px;
+	top: 0px;
+	height: 66px;
+	max-height: 66px;
+	width: 100%;/* 280px; */
+	/* margin: 20px 0px; */
+	background-color: #fff;
+	border-bottom: 4px solid #000;
+}
+
+#mnu_toggle {
+	z-index:1;
+	position: fixed;
+	top: 16px;
 	width: 40px;
 }
 
@@ -74,6 +87,8 @@ body {
 
 #header {
 	padding-left: 60px;
+	position: fixed;
+	top: -20px;
 }
 
 #header h1 {
@@ -88,6 +103,11 @@ body {
 #footer {
 	font-size: 14px;
 	overflow-x: hidden;
+}
+
+.divider {
+	color: white;
+	margin: 26px 0px;
 }
 
 .para {
