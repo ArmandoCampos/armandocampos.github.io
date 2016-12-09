@@ -1,7 +1,7 @@
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Scope One', serif;
 	font-size: 18px;
-	background-color: #EFEBE9;
+	background-color: #E0E0E0;
 	list-style: none;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .mnu_side {
 	color: #fff;
-	background-color: #212121;
+	background-color: #01579B;/* 212121; */
 	position: fixed;
 	top: -20px;
 	left: -161px;
@@ -37,11 +37,17 @@ body {
 	list-style: none;
 	overflow-x: hidden;
 	white-space: nowrap;
+	font-family: 'Scope One', serif;
+}
+
+.mnu_side li {
+	margin: 8px 0px;
+	width: 140px;
 }
 
 .mnu_side li a {
 	color: #fff;
-	font-family: 'Enriqueta', serif;
+	font-family: 'Scope One', serif;
 	font-weight: bold;
 	font-size: 20px;
 	text-decoration: none;
@@ -49,6 +55,7 @@ body {
 	padding: 10px;
 	position: relative;
 	left: -40px;
+	background-color: #0288D1;
 }
 
 .mnu_side li a:hover {
@@ -61,6 +68,7 @@ body {
 	padding: 0px 5px;
 	border-left: 6px solid #000;
 	background-color: #fff;
+	box-shadow: 10px 10px 4px #888888;
 }
 
 #fixedtop {
@@ -112,12 +120,18 @@ body {
 
 .para {
 	font-size: 16px;
-	font-family: 'Enriqueta', sans-serif;
+	font-family: 'Bitter', serif;
 }
 
 .dark {
 	background-color: #212121;
 	color: #fff;
+}
+
+.colored {
+	background-color: #E53935;
+	color: #fff;
+	font-family: 'Bitter', serif;
 }
 
 .space {
@@ -137,6 +151,7 @@ body {
 	/* overflow: scroll; */
 	width: 240px;
 	height: 200px;
+	box-shadow: 8px 8px 2px #888888;
 }
 
 .stepcarousel .belt {
