@@ -138,7 +138,10 @@ body {
 .colored {
 	/*background: #E53935;
 	color: #fff;*/
+	background-color: #fff;
 	font-family: 'Bitter', serif;
+	overflow-x: hidden;
+	width: 1000px;
 }
 
 .space {
