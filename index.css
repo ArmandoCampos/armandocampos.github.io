@@ -120,6 +120,7 @@ body {
 	overflow-x: hidden;
 }
 
+/* --- Custom Classes --- */
 .divider {
 	color: white;
 	margin: 26px 0px;
@@ -130,12 +131,21 @@ body {
 	font-family: 'Bitter', serif;
 }
 
+.note {
+	padding-left: 20px;
+	color: #212121;
+}
+
+.narrow {
+	letter-spacing: -2px;
+}
+
 .dark {
 	background-color: #212121;
 	color: #fff;
 }
 
-.colored {
+.bgwhite {
 	/*background: #E53935;
 	color: #fff;*/
 	background-color: #fff;
