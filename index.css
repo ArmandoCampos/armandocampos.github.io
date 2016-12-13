@@ -142,6 +142,7 @@ body {
 	font-family: 'Bitter', serif;
 	overflow-x: hidden;
 	width: 1000px;
+	letter-spacing: -2px;
 }
 
 .space {
