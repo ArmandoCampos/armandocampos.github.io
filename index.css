@@ -64,8 +64,8 @@ body {
 }
 
 .mnu_side li a:hover {
-	color: #FF6F00;/*FFD740*/
-	background-color: #FFCA28;
+	color: #F9A825;/*FFD740*/
+	background-color: #FFEB3B;
 }
 
 .wrapper {
@@ -103,7 +103,7 @@ body {
 }
 
 #fixedtop #banner:hover {
-	filter: invert(98%);
+	filter: invert(100%);
 }
 
 #mnu_toggle {
