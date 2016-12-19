@@ -24,7 +24,7 @@ function exclude_space(num){
 	$('#space'+num).removeClass('mouseover');
 }
 
-// Carousel Gallery Functionality ---------------------------------------------------------
+// Carousel Gallery Functionality -----------------------------------
 function belt_moveup(belt, postmax){
 	var cur_post = belt_getpost(belt, postmax);
 	var bp = "beltPost";
@@ -42,6 +42,7 @@ function belt_movedown(belt, postmax){
 	var cur_post = belt_getpost(belt, postmax);
 	var bp = "beltPost";
 	// Can't use a switch statement here
+	// The maximum number of images is not constant
 	if(cur_post == postmax){ // postmax -> 1	<<< Max Panels = postmax
 		class_change(belt, bp+postmax, bp+"1");
 	}else{ // i -> i+1
