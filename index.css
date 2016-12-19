@@ -60,10 +60,12 @@ body {
 	left: -40px;
 	background-color: #F57C00;/*424242*/
 	border-radius: 8%;
+	transition: background-color 0.2s ease;
 }
 
 .mnu_side li a:hover {
-	color: #FFD740;
+	color: #FF6F00;/*FFD740*/
+	background-color: #FFCA28;
 }
 
 .wrapper {
@@ -96,6 +98,12 @@ body {
 	position: fixed;
 	top: 6px;
 	width: 300px;
+	filter: invert(0%);
+	transition: filter 0.2s ease;
+}
+
+#fixedtop #banner:hover {
+	filter: invert(98%);
 }
 
 #mnu_toggle {
