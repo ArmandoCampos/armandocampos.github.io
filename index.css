@@ -29,7 +29,8 @@ body {
 
 .mnu_side {
 	color: #fff;
-	background-color: #FF9100;/* 212121; */
+	/*background-color: #FF9100;/* 212121; */
+	background: url('assets/mnuSide.png');
 	position: fixed;
 	top: -20px;
 	left: -161px;
@@ -58,7 +59,8 @@ body {
 	padding: 10px;
 	position: relative;
 	left: -40px;
-	background-color: #F57C00;/*424242*/
+	/*background-color: #F57C00;/*424242*/
+	background: url('assets/mnuSide.jpg');
 	border-radius: 8%;
 	transition: background-color 0.2s ease;
 }
@@ -72,11 +74,12 @@ body {
 	top: -8px;
 	margin: 0px 5px;
 	padding: 0px 5px;
-	border: 6px solid #F44336;
+	border: 6px solid #14181a;
+	border-radius: 4%;
 	/*border-left: 6px solid #C62828;E0E0E0
 	border-bottom: 6px solid #C62828;*/
 	background-color: #fff;
-	box-shadow: 10px 10px 4px #B71C1C;/*888888*/
+	box-shadow: 10px 10px 4px #222222;/*888888*/
 }
 
 #fixedtop {
@@ -87,41 +90,57 @@ body {
 	width: 100%;/* 280px; */
 	/* margin: 20px 0px; */
 	/*background-color: #fff;*/
-	background-color: #FDD835;
-	border-bottom: 6px solid #FBC02D;
-	border-left: 6px solid #FBC02D;
+	/*background-color: #FDD835;*/
+	background: url('assets/mnuSide.png');
+	border-bottom: 6px solid #14181a;
+	border-left: 6px solid #14181a;
 	margin-left: -5px;
 	padding-left: 4px;
+	/*
+		
+		Consider Rotating MnuToggle Button when hovering
+
+	*/
 }
 
 #fixedtop #banner {
 	position: fixed;
 	top: 6px;
 	width: 300px;
-	filter: invert(0%);
+	filter: invert(100%);
 	transition: filter 0.2s ease;
 }
 
 #fixedtop #banner:hover {
-	filter: invert(100%);
+	filter: invert(60%);
+}
+
+#top_mnu {
+	border: solid 6px #fff;
 }
 
 #mnu_toggle {
 	z-index:1;
+	padding: 6px;
 	position: fixed;
 	top: 16px;
 	width: 40px;
-	filter: invert(0%);
+	filter: invert(100%);
 	transition: filter 0.1s ease;
+	border: solid 2px #000;
+	border-radius: 10%;
+	transition: border-radius 0.4s ease;
 }
 
 #mnu_toggle:hover {
 	cursor: pointer;
-	filter: invert(100%);
+	filter: invert(60%);
+	border-color: #fff;
+	border-radius: 80%;
 }
 
 #header {
-	padding-left: 46px;
+	padding-left: 54px;
 	position: fixed;
 	top: -20px;
 }
@@ -188,7 +207,7 @@ body {
 /* -- Carousel Galleries -- */
 .stepcarousel {
 	position: relative;
-	background: #FDD835;
+	background: url('assets/mnuSide.png');/*#FDD835;*/
 	border: 10px solid #FBC02D;
 	overflow: hidden;
 	/* overflow: scroll; */
@@ -251,6 +270,7 @@ body {
 .panelimg {
 	width: 180px;
 	display: block;
+	filter: invert(100%);
 }
 
 .beltbtns {
