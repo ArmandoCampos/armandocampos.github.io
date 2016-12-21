@@ -4,7 +4,7 @@ body {
 	/*background-color: #fff;*/
 	list-style: none;
 	background: url('assets/bg.jpg');
-	background-position: 1600px 1200px;
+	background-position: 1600px 0px;
 }
 
 .mnu {
@@ -71,6 +71,7 @@ body {
 }
 
 .wrapper {
+	font-family: 'Bitter', sans-serif;
 	top: -18px;
 	margin: 0px 5px;
 	padding: 0px 5px;
@@ -168,7 +169,7 @@ body {
 
 .para {
 	font-size: 16px;
-	font-family: 'Bitter', serif;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 .note {
@@ -185,11 +186,20 @@ body {
 	color: #fff;
 }
 
+.separation {
+	color: #fff;
+	height: 0px;
+	width: 100%;
+	display: block;
+	margin: 8px 0px;
+	border-bottom: 4px solid #212121;
+}
+
 .bgwhite {
 	/*background: #E53935;
 	color: #fff;*/
 	background-color: #fff;
-	font-family: 'Bitter', serif;
+	font-family: 'Bitter', sans-serif;
 	overflow-x: hidden;
 	width: 1000px;
 	letter-spacing: -2px;
