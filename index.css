@@ -43,9 +43,14 @@ body {
 	font-family: 'Scope One', serif;
 }
 
+.mnu_side ul {
+	background-color: #000;
+	padding-bottom: 8px;
+}
+
 .mnu_side li {
 	margin: 8px 0px;
-	width: 140px;
+	width: 146px;
 }
 
 .mnu_side li a {
@@ -59,15 +64,17 @@ body {
 	padding: 10px;
 	position: relative;
 	left: -40px;
-	/*background-color: #F57C00;/*424242*/
-	background: url('assets/mnuSide.jpg');
-	border-radius: 8%;
-	transition: background-color 0.2s ease;
+	background: #212121;/*424242
+	/*background: url('assets/mnuSide.jpg');*/
+	transition: background 0.2s ease;
+	border-left: none;
+	transition: border-left 0.1s ease;
 }
 
 .mnu_side li a:hover {
 	color: #F9A825;/*FFD740*/
-	background-color: #FFEB3B;
+	background: #FFEB3B;
+	border-left: 6px solid #F9A825;
 }
 
 .wrapper {
@@ -157,6 +164,7 @@ body {
 }
 
 #footer {
+	margin-top: 30px;
 	font-size: 14px;
 	overflow-x: hidden;
 }
@@ -168,11 +176,16 @@ body {
 }
 
 .para {
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'Nunito Sans', sans-serif;
 }
 
+.photo {
+	width: 220px;
+}
+
 .note {
+	margin: 4px 0px;
 	padding-left: 20px;
 	color: #212121;
 }
