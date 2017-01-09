@@ -61,3 +61,14 @@ function belt_getpost(belt, postmax){
 	}
 	return post;
 }
+
+// Slider Functionality -----------------------------------
+function slide_over(num){
+	$('#slider_f'+num).addClass('slider_fhover');
+	$('#slider_b'+num).addClass('slider_bhover');
+}
+
+function slide_out(num){
+	$('#slider_f'+num).removeClass('slider_fhover');
+	$('#slider_b'+num).removeClass('slider_bhover');
+}
