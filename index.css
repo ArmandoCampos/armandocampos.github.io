@@ -169,6 +169,21 @@ a:hover {
 	font-size: 12px;
 }
 
+#toc {
+	list-style: none;
+	padding: 0px;
+}
+
+#toc li {
+	padding: 4px;
+	letter-spacing: 0px;
+	transition: letter-spacing 0.2s;
+}
+
+#toc li:hover {
+	letter-spacing: 10px;
+}
+
 /* --- Custom Classes --- */
 .space {
 	display: none;
@@ -432,8 +447,6 @@ a:hover {
 	top: 140px;
 }
 
-
-
 .gallery {
 	/*Image and Tags*/
 	max-width: 256px;
@@ -455,4 +468,5 @@ a:hover {
 .ghover:hover {
 	top: -10px;
 	filter: brightness(60%);
+	cursor: pointer;
 }
