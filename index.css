@@ -205,7 +205,7 @@ a:hover {
 
 /* --- Custom Classes --- */
 .headline {
-	animation: rest 0.2s 2;
+	animation: rest 0.2s 4;
 	animation-direction: alternate;
 }
 
