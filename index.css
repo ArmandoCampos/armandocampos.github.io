@@ -291,6 +291,7 @@ a:hover {
 }
 
 .phover {
+	width: 256px;
 	position: relative;
 	top: 0px;
 	filter: brightness(100%);
