@@ -126,22 +126,14 @@ a:hover {
 	z-index: 1;
 	position: fixed;
 	top: 0px;
-	height: 86px;/*66*/
+	height: 86px;
 	max-height: 86px;
-	width: 100%;/* 280px; */
-	/* margin: 20px 0px; */
-	/*background-color: #fff;*/
-	/*background-color: #FDD835;*/
+	width: 100%;
 	background: url('assets/mnuSide.png');
 	border-bottom: 6px solid #14181a;
 	border-left: 6px solid #14181a;
 	margin-left: -5px;
 	padding-left: 4px;
-	/*
-		
-		Consider Rotating MnuToggle Button when hovering
-
-	*/
 }
 
 #fixedtop #banner {
@@ -149,6 +141,8 @@ a:hover {
 	top: 6px;
 	width: 300px;
 	filter: invert(100%);
+	-moz-transition: filter 0.2s ease;
+	-webkit-transition: filter 0.2s ease;
 	transition: filter 0.2s ease;
 }
 
@@ -290,17 +284,33 @@ a:hover {
 	width: 256px;
 }
 
+.photoS {
+	width: 64px;
+}
+
 .phover {
-	width: 256px;
 	position: relative;
 	top: 0px;
 	filter: brightness(100%);
+	-moz-transition: top 0.2s ease-out, filter 0.2s;
+	-webkit-transition: top 0.2s ease-out, filter 0.2s;
 	transition: top 0.2s ease-out, filter 0.2s;
+	cursor: pointer;
 }
 
 .phover:hover {
 	top: -10px;
 	filter: brightness(60%);
+}
+
+.imglst {
+	text-align: center;
+	margin: 0 auto 0 auto;
+}
+
+.imglsti {
+	display: inline-block;
+	margin: 0px 10px;
 }
 
 .note {
@@ -361,8 +371,6 @@ a:hover {
 }
 
 .bgwhite {
-	/*background: #E53935;
-	color: #fff;*/
 	background-color: #fff;
 	font-family: 'Bitter', sans-serif;
 	overflow-x: hidden;
@@ -382,10 +390,8 @@ a:hover {
 /* -- Carousel Galleries -- */
 .stepcarousel {
 	position: relative;
-	/*background: url('assets/mnuSide.png');/*#FDD835;*/
 	border: 10px solid #FBC02D;
 	overflow: hidden;
-	/* overflow: scroll; */
 	width: 240px;
 	height: 200px;
 	box-shadow: 8px 8px 2px #F57F17;
@@ -397,20 +403,12 @@ a:hover {
 	top: 0px;
 }
 
-.beltPost1 {
-	/* background-color: orange;*/
-}
-.beltPost2{
-	/* background-color: white; */
-}
-.beltPost3 {
-	/* background-color: yellow; */
-}
-
 .beltPost1 .panels {
 	position: relative;
 	top: 0px;
 	display: block;
+	-moz-transition: top 0.8s ease-out;
+	-webkit-transition: top 0.8s ease-out;
 	transition: top 0.8s ease-out;
 }
 
@@ -418,6 +416,8 @@ a:hover {
 	position: relative;
 	top: -180px;
 	display: block;
+	-moz-transition: top 0.8s ease-out;
+	-webkit-transition: top 0.8s ease-out;
 	transition: top 0.8s ease-out;
 }
 
@@ -425,6 +425,8 @@ a:hover {
 	position: relative;
 	top: -360px;
 	display: block;
+	-moz-transition: top 0.8s ease-out;
+	-webkit-transition: top 0.8s ease-out;
 	transition: top 0.8s ease-out;
 }
 
@@ -432,6 +434,8 @@ a:hover {
 	position: relative;
 	top: -540px;
 	display: block;
+	-moz-transition: top 0.8s ease-out;
+	-webkit-transition: top 0.8s ease-out;
 	transition: top 0.8s ease-out;
 }
 
@@ -453,7 +457,6 @@ a:hover {
 	left: 180px;
 	top: 0px;
 	height: 160px;
-	/*border: 8px solid black;*/
 }
 
 .beltbtn {
@@ -483,7 +486,6 @@ a:hover {
 }
 
 .gallery {
-	/*Image and Tags*/
 	max-width: 256px;
 	max-height: 144px;
 }
@@ -497,6 +499,8 @@ a:hover {
 	position: relative;
 	top: 0px;
 	filter: brightness(100%);
+	-moz-transition: top 0.2s ease-out, filter 0.2s;
+	-webkit-transition: top 0.2s ease-out, filter 0.2s;
 	transition: top 0.2s ease-out, filter 0.2s;
 }
 
