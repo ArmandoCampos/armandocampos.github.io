@@ -1,14 +1,29 @@
+// ©2017 Armando Campos
+
 // General ---------------------------------------------------------
+/**
+	* Replace an Element's Class.
+	* @param {Object} elmnt
+	* @param {Number} prev
+	* @param {Number} next
+*/
 function class_change(elmnt, prev, next){
 	elmnt.classList.remove(prev);
 	elmnt.classList.add(next);
 }
 
+/**
+	* Retrieve an Element by it's ID.
+	* @param {String} str
+*/
 function getByID(str){
 	return document.getElementById(str);
 }
 
 // Menu Fucntionality ----------------------------------------------
+/**
+	* Side Menu: Bind.
+*/
 function bind_mnu(){
 	var body = $('.mnu');
 	$('#mnu_toggle').bind('click', function(){
@@ -16,15 +31,24 @@ function bind_mnu(){
 	});
 }
 
+/**
+	* Side Menu: Include Space as buffer.
+*/
 function include_space(num){
 	$('#space'+num).addClass('mouseover');
 }
 
+/**
+	* Side Menu: Remove Space buffer.
+*/
 function exclude_space(num){
 	$('#space'+num).removeClass('mouseover');
 }
 
 // Carousel Gallery Functionality -----------------------------------
+/**
+	* Gallery: Move Belt Up.
+*/
 function belt_moveup(belt, postmax){
 	var cur_post = belt_getpost(belt, postmax);
 	var bp = "beltPost";
@@ -38,6 +62,9 @@ function belt_moveup(belt, postmax){
 	}
 }
 
+/**
+	* Gallery: Move Belt Down.
+*/
 function belt_movedown(belt, postmax){
 	var cur_post = belt_getpost(belt, postmax);
 	var bp = "beltPost";
@@ -50,6 +77,9 @@ function belt_movedown(belt, postmax){
 	}
 }
 
+/**
+	* Gallery: Belt Get Position.
+*/
 function belt_getpost(belt, postmax){
 	var post = 1;
 	for(var i = 1; i < postmax+1; i++){ // <<< Max Panels = postmax
@@ -63,11 +93,17 @@ function belt_getpost(belt, postmax){
 }
 
 // Slider Functionality -----------------------------------
+/**
+	* Slider: Slide react to Mouse Over.
+*/
 function slide_over(num){
 	$('#slider_f'+num).addClass('slider_fhover');
 	$('#slider_b'+num).addClass('slider_bhover');
 }
 
+/**
+	* Slider: Slide react to Mouse Out.
+*/
 function slide_out(num){
 	$('#slider_f'+num).removeClass('slider_fhover');
 	$('#slider_b'+num).removeClass('slider_bhover');
